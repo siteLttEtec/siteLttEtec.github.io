@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    color: black;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+    width: 100%;
+    margin: 0 !important;
+}
+
+#mainNavbar {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    height: 75px;
+    top: 0;
+    position: sticky;
+    z-index: 1000;
+    padding:15px;
+}
+
+#mainNavbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 64px;
+}
+
+#mainNavbar ul li {
+    transition: 200ms ease-in-out;
+    cursor: pointer;
+}
+
+#mainNavbar ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+#mainNavbar ul li:hover {
+    transform:scale(1.2);
+    text-decoration: underline;
+}
+
+.avatarContainer {
+  width: 60px;
+  aspect-ratio: 1/0.98;
+  overflow: hidden;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: white;
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatarContainer .userAvatar {
+  width: 100%;
+  height: 100%;
+  transform:scale(1.2);
+  object-fit: cover;
+  object-position: top center;
+  transition: transform 200ms ease-in-out;
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: rotate(0);
+  }
+  20%, 60% {
+    transform: rotate(-15deg);
+  }
+  40%, 80% {
+    transform: rotate(15deg);
+  }
+}
+
+#notificationsContainer:hover .notifications {
+  animation: shake 1s ease-in-out infinite;
+}
+
+#notificationsContainer{
+    position: relative;
+    margin-right: 15px;
+}
+
+#notificationsContainer svg{
+    transform:scale(1.4);
+}
+
+.notifications{
+    background-color: red;
+    color: white;
+    border-radius:50%;
+    padding:4px 8px;
+    bottom:2px;
+    left: 10px;
+    font-size:10px;
+    position:absolute;
+}
+
+#banner {
+    position: relative;
+    height: 328px;
+    aspect-ratio: 1920 / 328;
+    overflow: hidden;
+}
+
+.bannerImg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: contain;
+    z-index: -1;
+    height: 328px;
+    aspect-ratio: 1920 / 328;
+}
+
+.bannerContainer {
+    width: 60%;
+    height: 100%;
+    padding: 20px 0px 0px 59px;
+}
+
+#subText {
+    font-size: 14px;
+    line-height: 1px !important;
+}
+
+.inputDiv {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: end;
+    padding-bottom: 35px;
+    max-width: 450px;
+}
+
+#bannerSearch {
+    width: 100%;
+    margin-top: 10px !important;
+    padding: 10px;
+    border-radius: 7px;
+    height: 50px;
+    outline: none;
+    color: black;
+    font-weight: bold;
+    transition: 300ms;
+    border: 2px solid black;
+}
+
+#bannerSearch:focus {
+    background-color: black;
+    color: gainsboro;
+}
+
+.content {
+    position: sticky;
+    top: 75px;
+    z-index: 500;
+    background: white;
+    max-height: 1600px;
+    padding: 0px;
+}
+
+.expressInfoContainer .row{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background: linear-gradient(rgba(0, 30, 255, 0.3), rgba(0, 0, 0, 0));
+    max-width:960px;
+    margin: 0 auto;
+}
+
+.expressContent{
+    padding: 30px;
+    height:300px;
+    display: flex;
+    align-items:center;
+    text-align: left;
+    flex-direction: column;
+    max-width:480px;
+}
+
+.buttonDiv{
+    height:50%;
+    width:75%;
+    display:flex;
+    align-items:end;
+    justify-content: center;
+    margin-bottom:15px;
+}
+
+.buttonDiv button{
+    width:100%;
+    transition:200ms;
+}
+
+.buttonDiv button:hover{
+    transform:scale(1.1);
+}
+
+.expressTechnologies{
+    margin:15rem auto 5rem;
+}
+
+.expressTechnologies .row .col-md-12{
+    text-align: center;
+    color:rgba(34, 49, 94, 1);
+}
+
+.social-icons a{
+    text-decoration: none !important;
+}
+
+#mainFooter .social-icons a:hover {
+  color: #0d6efd;
+}
+
+#mainFooter .social-icons i {
+  font-size: 1.25rem;
+  transition: 200ms ease-in-out;
+}
+
+#mainFooter .social-icons a:hover i {
+  font-size:1.5em;
+}
+
+.footer-text{
+    color: white !important;
+}
