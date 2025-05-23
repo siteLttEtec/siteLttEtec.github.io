@@ -43,7 +43,7 @@ function abrirModalNotificacoes() {
     </p>
 
     <p>
-      <strong>Sara dos Santos Leite</strong><br>
+      <strong>Sara da Silva Leite</strong><br>
       Gerente de Contas Corporativas<br>
       Transporta TECH
     </p>
